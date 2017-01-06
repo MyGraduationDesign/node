@@ -1,35 +1,24 @@
-# node.js »Øµ÷º¯Êı
------------
-## ×èÈû´úÂëÊµÀı(ÔÚÎÄ¼ş¶ÁÈ¡Íêºó²ÅÖ´ĞĞÍê³ÌĞò)
-- input.txt
+# node.js å›è°ƒå‡½æ•°
 
-```²ËÄñ½Ì³Ì¹ÙÍøµØÖ·£ºwww.runoob.com```
-
+## é˜»å¡ä»£ç å®ä¾‹(åœ¨æ–‡ä»¶è¯»å–å®Œåæ‰æ‰§è¡Œå®Œç¨‹åº)
 - main.js
-
 ```
-var fs = require("fs");
+    var fs = require("fs");
 
-var data = fs.readFileSync('input.txt');
+    var data = fs.readFileSync('input.txt');
 
-console.log(data.toString());
-console.log("³ÌĞòÖ´ĞĞ½áÊø!");
-```
-
-## ·Ç×èÈû´úÂëÊµÀı(²»ĞèÒª°´Ë³Ğò)
-- input.txt
-
-```²ËÄñ½Ì³Ì¹ÙÍøµØÖ·£ºwww.runoob.com```
-
-- main01.js
-
-```
-var fs = require("fs");
-
-fs.readFile('input.txt', function (err, data) {
-    if (err) return console.error(err);
     console.log(data.toString());
-});
+    console.log("ç¨‹åºæ‰§è¡Œç»“æŸ!");
+```
+## éé˜»å¡ä»£ç å®ä¾‹(ä¸éœ€è¦æŒ‰é¡ºåº)
+- main01.js
+```
+    var fs = require("fs");
 
-console.log("³ÌĞòÖ´ĞĞ½áÊø!");
+    fs.readFile('input.txt', function (err, data) {
+        if (err) return console.error(err);
+        console.log(data.toString());
+    });
+
+    console.log("ç¨‹åºæ‰§è¡Œç»“æŸ!");
 ```
