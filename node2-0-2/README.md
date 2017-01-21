@@ -50,3 +50,47 @@
 # 将 Buffer 转换为 JSON 对象
 
 `buf.toJSON()`返回 JSON 对象。
+
+# 缓冲区合并
+
+`Buffer.concat(list[, totalLength])`
+
+> - list - 用于合并的 Buffer 对象数组列表。
+
+> - totalLength - 指定合并后Buffer对象的总长度。
+
+> 返回一个多个成员合并的新 Buffer 对象。
+
+# 缓冲区比较
+
+`buf.compare(otherBuffer);`
+
+> - otherBuffer - 与 buf 对象比较的另外一个 Buffer 对象。
+
+# 拷贝缓冲区
+
+`buf.copy(targetBuffer[, targetStart[, sourceStart[, sourceEnd]]])`
+
+> - targetBuffer - 要拷贝的 Buffer 对象。
+
+> - targetStart - 数字, 可选, 默认: 0
+
+> - sourceStart - 数字, 可选, 默认: 0
+
+> - sourceEnd - 数字, 可选, 默认: buffer.length
+
+# 缓冲区裁剪
+
+`buf.slice([start[, end]])`
+
+> - start - 数字, 可选, 默认: 0
+
+> - end - 数字, 可选, 默认: buffer.length
+
+# 缓冲区长度
+
+`buf.length;`
+
+> 返回 Buffer 对象所占据的内存长度。
+
+#
